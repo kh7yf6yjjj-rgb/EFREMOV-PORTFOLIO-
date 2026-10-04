@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EFREMOV® — Creative Studio</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+background:#070707;
+color:#f5f5f5;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:22px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:10;
+background:rgba(7,7,7,.85);
+backdrop-filter:blur(10px);
+}
+
+.logo{
+font-size:20px;
+font-weight:bold;
+letter-spacing:-1px;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-size:11px;
+letter-spacing:2px;
+}
+
+main{
+padding:120px 5% 60px;
+}
+
+.hero{
+min-height:75vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.small{
+color:#777;
+font-size:11px;
+letter-spacing:3px;
+margin-bottom:30px;
+}
+
+h1{
+font-size:clamp(70px,17vw,220px);
+line-height:.78;
+letter-spacing:-10px;
+font-weight:700;
+}
+
+.subtitle{
+margin-top:40px;
+font-size:13px;
+letter-spacing:3px;
+color:#999;
+}
+
+section{
+padding:120px 0;
+border-top:1px solid #222;
+}
+
+h2{
+font-size:11px;
+font-weight:400;
+color:#777;
+letter-spacing:3px;
+margin-bottom:50px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.card{
+height:360px;
+background:#101010;
+border:1px solid #222;
+padding:28px;
+display:flex;
+align-items:flex-end;
+transition:.4s;
+}
+
+.card:hover{
+background:#181818;
+transform:translateY(-5px);
+}
+
+.card h3{
+font-size:25px;
+letter-spacing:-1px;
+}
+
+.card p{
+margin-top:8px;
+font-size:11px;
+color:#777;
+letter-spacing:2px;
+}
+
+.big{
+font-size:clamp(45px,9vw,120px);
+line-height:.88;
+letter-spacing:-5px;
+font-weight:700;
+max-width:1000px;
+}
+
+.about{
+max-width:900px;
+}
+
+.contact a{
+display:block;
+color:#fff;
+text-decoration:none;
+font-size:30px;
+margin:18px 0;
+}
+
+footer{
+padding:40px 0;
+border-top:1px solid #222;
+color:#555;
+font-size:10px;
+letter-spacing:2px;
+}
+
+@media(max-width:600px){
+
+nav{
+display:none;
+}
+
+main{
+padding-left:5%;
+padding-right:5%;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.card{
+height:280px;
+}
+
+h1{
+letter-spacing:-6px;
+}
+
+.big{
+letter-spacing:-3px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">EFREMOV®</div>
+
+<nav>
+<a href="#work">WORK</a>
+<a href="#fashion">FASHION</a>
+<a href="#about">ABOUT</a>
+<a href="#contact">CONTACT</a>
+</nav>
+
+</header>
+
+<main>
+
+<div class="hero">
+
+<div class="small">MOSCOW / 2026</div>
+
+<h1>EFREMOV</h1>
+
+<div class="subtitle">
+GRAPHIC DESIGN / FASHION / ART DIRECTION
+</div>
+
+</div>
+
+
+<section id="work">
+
+<h2>01 — SELECTED WORK</h2>
+
+<div class="grid">
+
+<div class="card">
+<div>
+<h3>EFREMOV IDENTITY</h3>
+<p>BRANDING / VISUAL IDENTITY</p>
+</div>
+</div>
+
+<div class="card">
+<div>
+<h3>FASHION CONCEPT</h3>
+<p>FASHION / CREATIVE DIRECTION</p>
+</div>
+</div>
+
+<div class="card">
+<div>
+<h3>VISUAL SYSTEM</h3>
+<p>GRAPHIC DESIGN</p>
+</div>
+</div>
+
+<div class="card">
+<div>
+<h3>EXPERIMENTAL</h3>
+<p>ART DIRECTION</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="fashion">
+
+<h2>02 — FASHION</h2>
+
+<div class="big">
+FUTURE<br>
+IN PROGRESS.
+</div>
+
+</section>
+
+
+<section id="about">
+
+<h2>03 — ABOUT</h2>
+
+<div class="big about">
+DESIGNING VISUAL WORLDS BETWEEN GRAPHIC DESIGN AND FASHION.
+</div>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<h2>04 — CONTACT</h2>
+
+<a href="#">INSTAGRAM ↗</a>
+
+<a href="#">TELEGRAM ↗</a>
+
+<a href="mailto:hello@efremov.design">
+EMAIL ↗
+</a>
+
+</section>
+
+
+<footer>
+EFREMOV® — INDEPENDENT CREATIVE STUDIO
+</footer>
+
+</main>
+
+</body>
+</html>
